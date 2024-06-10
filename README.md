@@ -1,1 +1,1 @@
-# cs234
+# Finetuning Diffusion Models using Reinforcement Learning
