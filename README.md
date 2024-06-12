@@ -45,7 +45,7 @@ To run training, follow these steps:
 ```
 cd diffusers/examples/text_to_image/
 
-accelerate launch --mixed_precision="fp16"  train_text_to_image_lora.py --pretrained_model_name_or_path="runwayml/stable-diffusion-v1-5" --dataset_name="yuvalkirstain/pickapic_v1" --dataloader_num_workers=8 --resolution=512 --center_crop --random_flip --train_batch_size=1 --gradient_accumulation_steps=1 --max_train_steps=1000 --learning_rate=1e-04 --max_grad_norm=1 --lr_scheduler="cosine" --lr_warmup_steps=0 --output_dir="/home/aniruddh_ramrakhyani/cs234/output_dir" --report_to=wandb --checkpointing_steps=500 --validation_prompt="A naruto with blue eyes." --seed=13 --caption_column="caption" --rank=4 --ddpo_num_inference_steps=12
+accelerate launch --mixed_precision="fp16"  train_text_to_image_lora.py --pretrained_model_name_or_path="runwayml/stable-diffusion-v1-5" --dataset_name="yuvalkirstain/pickapic_v1" --dataloader_num_workers=8 --resolution=512 --center_crop --random_flip --train_batch_size=1 --gradient_accumulation_steps=1 --max_train_steps=1000 --learning_rate=1e-04 --max_grad_norm=1 --lr_scheduler="cosine" --lr_warmup_steps=0 --output_dir="/home/aniruddh_ramrakhyani/cs234/output_dir" --report_to=wandb --checkpointing_steps=500 --validation_prompt="Red pokemon with blue eyes." --seed=13 --caption_column="caption" --rank=4 --ddpo_num_inference_steps=12
 ```
 
 To run inference using the trained weights:
