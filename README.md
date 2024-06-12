@@ -10,9 +10,9 @@ The repo is organized as follows:
     - Prepares the dataset and batches
     - Deals with checkpointing and validation
 
-    The code in this file was borrowed from hugging face for checkpointing and validation but I modified the file and implemented the DDPO algorithm, training loop, reward model invocation, reward normalization myself.
+    **The code in this file was borrowed from hugging face for checkpointing and validation but I modified the file and implemented the DDPO algorithm, training loop, reward model invocation, reward normalization myself.**
 
-2. "scheduling_ddpm.py" : The relevant function in this file is "step()". This function implements a denoising step of the pipeline given the noise     prediction from unet. I modified this function to additionally return the logprob of the predicted sample which is used for calculating training loss.
+2. "scheduling_ddpm.py" : The relevant function in this file is "step()". This function implements a denoising step of the pipeline given the noise     prediction from unet. **I modified this function to additionally return the logprob of the predicted sample which is used for calculating training loss.**
 
 3. "pipeline_stable_diffusion.py" : The main function in this file is ""__call__()". This function implements the inference loop of Stable Diffusion. The only change I made to this file was to disable the nsfw checker as it was (in most cases) erroneously detecting nsfw content and output a black image, thereby hampering proper evaluation.
 
@@ -22,7 +22,7 @@ The repo is organized as follows:
 
 6. "inference_script.py" : Script to run inference on the DDPO finetuned model.
 
-Code changes I made in the Hugging Face files, can be easily determined by searching for "cs234" string in the file. 
+**Code changes I made in the Hugging Face files, can be easily determined by searching for "cs234" string in the file.**
 
 
 To run training, follow these steps:
