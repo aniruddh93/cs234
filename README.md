@@ -1,6 +1,6 @@
-# Finetuning Diffusion Models using Reinforcement Learning
+# Training Diffusion Models using Reinforcement Learning
 
-This repo contains code for 2024 Spring CS234 final project: Finetuning Diffusion Models using Reinforcement Learning. In this project, I implement Denoising Diffusion Policy Optimization paper [1](https://arxiv.org/abs/2305.13301) to finetune Stable Diffusion model to generate more prompt aligned and aesthetically appealing images.
+This repo contains code for 2024 Spring CS234 final project: Training Diffusion Models using Reinforcement Learning. In this project, I implement Denoising Diffusion Policy Optimization paper [1](https://arxiv.org/abs/2305.13301) to finetune Stable Diffusion model to generate more prompt aligned and aesthetically appealing images.
 
 The repo is organized as follows:
 
