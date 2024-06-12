@@ -22,6 +22,8 @@ The repo is organized as follows:
 
 6. "inference_script.py" : Script to run inference on the DDPO finetuned model.
 
+Code changes I made in the Hugging Face files, can be easily determined by searching for "cs234" string in the file. 
+
 
 To run training, follow these steps:
 

@@ -6,7 +6,6 @@ import os
 
 
 def main():
-    """Main function for calculating reward scores for given prompt and image."""
 
     pipeline = AutoPipelineForText2Image.from_pretrained("runwayml/stable-diffusion-v1-5", torch_dtype=torch.float16).to("cuda")
     pipeline.load_lora_weights("/home/aniruddh_ramrakhyani/cs234/output_dir", weight_name="pytorch_lora_weights.safetensors")
