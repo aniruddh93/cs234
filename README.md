@@ -14,13 +14,13 @@ The repo is organized as follows:
 
 2. "scheduling_ddpm.py" : The relevant function in this file is "step()". This function implements a denoising step of the pipeline given the noise     prediction from unet. **I modified this function to additionally return the logprob of the predicted sample which is used for calculating training loss.**
 
-3. "pipeline_stable_diffusion.py" : The main function in this file is ""__call__()". This function implements the inference loop of Stable Diffusion. The only change I made to this file was to disable the nsfw checker as it was (in most cases) erroneously detecting nsfw content and output a black image, thereby hampering proper evaluation.
+3. "pipeline_stable_diffusion.py" : The main function in this file is ""__call__()". This function implements the inference loop of Stable Diffusion. **The only change I made to this file was to disable the nsfw checker as it was (in most cases) erroneously detecting nsfw content and output a black image, thereby hampering proper evaluation.**
 
-4. "reward_inference.py" : Calculates the reward obtained by the generated image for the given prompt using pick-a-pic reward model.
+4. "reward_inference.py" : Calculates the reward obtained by the generated image for the given prompt using pick-a-pic reward model. File was created by me.
 
-5. "avg_reward_calculation.py" : Script to calculate mean and variance of the reward on the training dataset. 
+5. "avg_reward_calculation.py" : Script to calculate mean and variance of the reward on the training dataset. File was created by me.
 
-6. "inference_script.py" : Script to run inference on the DDPO finetuned model.
+6. "inference_script.py" : Script to run inference on the DDPO finetuned model. File was created by me.
 
 **Code changes I made in the Hugging Face files, can be easily determined by searching for "cs234" string in the file.**
 
